@@ -2,9 +2,9 @@ import streamlit as st
 from transformers import pipeline
 
 # Título e descrição
-st.set_page_config(page_title="Text Summarizer", page_icon="🧠")
-st.title("Text Summarizer App")
-st.write("Insira um texto e obtenha um resumo automático usando um modelo do Hugging Face.")
+st.set_page_config(page_title="Resuma seu Texto Aqui", page_icon="🧠")
+st.title("Resumo de Texto")
+st.write("Insira um texto e obtenha um resumo automático usando um modelo do Hugging Face. (acebook/bart-large-cnn)")
 
 # Campo de texto
 text_input = st.text_area("Digite ou cole seu texto abaixo:", height=200, placeholder="Cole seu texto aqui...")
