@@ -1,3 +1,4 @@
+pip install --upgrade streamlit
 streamlit
 transformers
 torch
