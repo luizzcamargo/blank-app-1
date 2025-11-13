@@ -14,7 +14,7 @@ if st.button("Gerar Resumo"):
     if text_input.strip():
         with st.spinner("Gerando resumo..."):
             summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-            summary = summarizer(text_input, max_length=130, min_length=30, do_sample=False)
+            summary = summarizer(text_input, max_length=300, min_length=30, do_sample=False)
             st.subheader("Resumo gerado:")
             st.success(summary[0]['summary_text'])
     else:
